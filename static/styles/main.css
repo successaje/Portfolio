@@ -1,0 +1,130 @@
+body{
+    background-color: white;
+}
+
+.navigation-bar{
+    background-color:  rgb(245, 239, 239);
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    /* max-width: 200px; */
+}
+
+.section--1{
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section--2{
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.navbar{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    
+}
+
+.nav-link{
+    color: black;
+    margin-right: 50px;
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+.hero{
+    background-color: rgb(240, 233, 233);
+    height: 80vh;
+    color: black;
+}
+
+#profile_picture{
+    height: 250px;
+    width: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.hero--content{
+    margin: 0 auto;
+    width: 800px;
+    padding: 3em;
+}
+
+.hero--content--intro{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.intro--name{
+    font-size: 75px;
+    letter-spacing: .15em;
+    font-weight: 600;
+    color: black;
+}
+
+/* .hero--content--subsection{
+    text-align: center;
+} */
+
+.description{
+    font-size: 42px;
+    text-align: center;
+}
+
+.motto{
+    font-size: 25px;
+    text-align: center;
+}
+
+.projects--wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+/* .project--column{
+    width: 300px;
+} */
+
+.project--body{
+    background-color: rgb(221, 219, 219);
+    padding: 1em;
+}
+
+.project--thumbnail{
+    width: 100%;
+}
+
+.my--projects{
+    margin-top: 1em;
+}
+
+.skills--container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.skill--wrapper{
+    margin-top: 2em;
+    margin-bottom: 2em;   
+}
+
+@media (max-width: 900px){
+    .hero--content--intro{
+        flex-direction : column;
+    }
+}
