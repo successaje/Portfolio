@@ -33,7 +33,7 @@
     <section class="hero">
         <div class="hero--content">
             <div class="hero--content--intro">
-                <img id="profile_picture" src="images/success.jpg">
+                <img id="profile_picture" src="{% static 'images/success.jpg' %}">
                 <h1 class="intro--name">SUCCESS <br> AJE</h1>
             </div>
             <div class="hero--content--subheadline">
@@ -46,15 +46,19 @@
     <section class="container section--2">
         <h3 class="my--projects">My projects</h3>
         <div class="projects--wrapper">
+            {% for project in projects %}
             <div class="project--column">
-                <img class="project--thumbnail" src="images/first.jpg">
+                <img class="project--thumbnail" src="{% static 'images/first.jpg' %}">
                 <div class="project--body">
                     <h4>Kawak Essay App</h4>
                 </div>
             </div>
+            {% empty %}
+                <h3>There are no projects in the database</h3>
+            {% endfor %}
 
-            <div class="project--column">
-                <img class="project--thumbnail" src="images/second.jpg">
+            <!-- <div class="project--column">
+                <img class="project--thumbnail" src="{% static 'images/second.jpg' %}">
                 <div class="project--body">
                     <h4>Unknown for now</h4>
 
@@ -62,12 +66,12 @@
             </div>
 
             <div class="project--column">
-                <img class="project--thumbnail" src="images/third.jpg">
+                <img class="project--thumbnail" src="{% static 'images/third.jpg' %}">
                 <div class="project--body">
                     <h4>Still coming in</h4>
 
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="about--wrapper">
