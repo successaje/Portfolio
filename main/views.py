@@ -7,3 +7,8 @@ def homePage(request):
     skills = Skill.objects.filter(body='')
     context = {'projects':projects, 'skills':skills, 'detailedSkills':detailedSkills}
     return render(request, 'main/home.html', context)
+
+
+def projectPage(request, pk):
+    context = {}
+    return(request, 'main/project.html', context)
