@@ -116,15 +116,50 @@ body{
 .skills--container{
     width: 600px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .skill--wrapper{
     margin-top: 2em;
-    margin-bottom: 2em;   
+    margin-bottom: 2em; 
+    display: flex;
+    gap: 2em;
+    /* align-items: center;   */
+}
+
+/* .skill--logo{
+    width: 60px;
+    object-fit: contain;
+} */
+
+
+.other--skill--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.skill--tag{
+    background-color: burlywood;
+    width: fit-content;
+    padding: 3px 20px;
+    border-radius: 20px;
 }
 
 @media (max-width: 900px){
     .hero--content--intro{
         flex-direction : column;
+    }
+}
+
+@media (max-width:600px){
+    .skills--container{
+        width: 100%;
+    }  
+}
+
+@media (max-width:400px){
+    .skill--wrapper{
+        flex-flow: column;
     }
 }
