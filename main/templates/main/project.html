@@ -3,6 +3,17 @@
 {% load static %}
 
 {% block content %}
-    <h1>Project</h1>
 
+<div class="container">
+    
+    <img class="project--image" src="{{ project.thumbnail.url }}">
+
+    <h1>{{ project.title }}</h1>
+
+    <a class="btn btn-warning" href="{% url 'edit-project' project.id %}">Edit</a>
+
+    <hr>
+    <p>{{ project.body|safe  }}</p>
+</div>
+    
 {% endblock content %}

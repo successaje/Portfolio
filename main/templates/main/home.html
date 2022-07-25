@@ -5,20 +5,7 @@
 {% block content %}
 
 <body>
-    <section class="navigation-bar">
-        
-        <a class="nav-link" href="#">
-            Projects
-        </a>
 
-        <a class="nav-link" href="#">
-            Courses
-        </a>
-
-        <a class="nav-link" href="#">
-            Contact
-        </a>
-    </section>
 
     <section class="hero">
         <div class="hero--content">
@@ -38,7 +25,7 @@
         <div class="projects--wrapper">
             {% for project in projects %}
             <div class="project--column">
-                <a href = {% url 'project' project.id %}>
+                <a href = "{% url 'project' project.id %}">
                     <img class="project--thumbnail" src="{{ project.thumbnail.url }}">
                 </a>
                 <div class="project--body">

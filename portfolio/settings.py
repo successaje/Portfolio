@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     #local apps
-    'main.apps.MainConfig'
+    'main.apps.MainConfig',
+
+    #thrid party apps
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +129,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = "staticfiles"
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 # Default primary key field type

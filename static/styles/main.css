@@ -3,8 +3,8 @@ body{
 }
 
 .navigation-bar{
-    background-color:  rgb(245, 239, 239);
-    height: 50px;
+    background-color:  white;
+    height: 30px;
     display: flex;
     justify-content:center;
     /* max-width: 200px; */
@@ -38,7 +38,7 @@ body{
 }
 
 .hero{
-    background-color: rgb(240, 233, 233);
+    background-color: white;
     height: 80vh;
     color: black;
 }
@@ -146,10 +146,19 @@ body{
     border-radius: 20px;
 }
 
+.project--image{
+    max-width: 800px;
+
+}
+
 @media (max-width: 900px){
     .hero--content--intro{
         flex-direction : column;
     }
+
+    /* .projects--wrapper{
+        grid-template-columns: 1fr;
+    } */
 }
 
 @media (max-width:600px){
